@@ -20,7 +20,7 @@
   align-items: center;
   border-bottom: 2px solid #F0F2F5;
   display: flex;
-  padding: 0 10px;
+  padding: 0 15px;
   flex: 0 1 55px;
   flex-direction: row;
 }
@@ -33,13 +33,17 @@
   position: relative;
 }
 
+.dashboard__widget__menu .Dropdown-root {
+  min-width: 85px;
+}
+
 .Dropdown-control, .icon-menu__btn-control {
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   cursor: default;
   outline: none;
-  padding: 8px 15px 8px 10px;
+  padding: 8px 0 8px 10px;
 }
 
 .Dropdown-arrow, .icon-menu__btn-arrow {
@@ -62,6 +66,7 @@
   margin-top: -1px;
   max-height: 200px;
   overflow-y: auto;
+  left: -10px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -110,7 +115,7 @@
 
 .icon-menu__btn-menu {
   width: 150px;
-  left: -100px;
+  left: -120px;
 }
 
 .icon-menu__btn-arrow:hover {

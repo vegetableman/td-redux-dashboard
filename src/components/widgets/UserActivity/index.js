@@ -33,7 +33,7 @@ class UserActivity extends Component {
             return (
               <div key={id} className='user-activity__item'>
                 <div className='user-activity__item__left'>
-                  <div>
+                  <div className='user-activity__item__avatar-wrapper'>
                     <img className='user-activity__item__avatar' src={users[id].avatar}/>
                   </div>
                   <span className='user-activity__user-name'>

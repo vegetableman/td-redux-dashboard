@@ -3,12 +3,12 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 15px 10px;
+  padding: 15px 0 0 0;
 }
 
 .user-activity__item {
   display: flex;
-  padding: 4px;
+  padding: 4px 17px 4px 12px;
 }
 
 .user-activity__item__left, .user-activity__item__right {
@@ -17,9 +17,15 @@
   flex: 1;
 }
 
-.user-activity__item__left .user-activity__item__avatar {
+.user-activity__item__avatar-wrapper {
+  margin: 0 10px 0 0;
   height: 32px;
   width: 32px;
+}
+
+.user-activity__item__avatar {
+  height: 100%;
+  width: 100%;
 }
 
 .user-activity__item__perc-wrapper {
