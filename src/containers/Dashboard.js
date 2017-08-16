@@ -42,12 +42,15 @@ class Dashboard extends Component {
   }
 
   render() {
-    const { widgets, cells, users, dispatch } = this.props;
+    const { widgets, cells, users, isFetching, dispatch } = this.props;
     const actions = bindActionCreators(WidgetActions, dispatch);
 
     return (
       <section className="dashboard">
-        <Header onShowWidgetDirectoryModal={this.handleShowWidgetDirectoryModal}/>
+        <Header 
+          isFetching={isFetching}
+          onShowWidgetDirectoryModal={this.handleShowWidgetDirectoryModal}
+        />
         <Grid 
           cells={cells}
           widgets={widgets}
@@ -77,7 +80,8 @@ function mapStateToProps(state) {
   return {
     widgets: state.widgetsById,
     cells: state.cells,
-    users: state.users
+    users: state.users,
+    isFetching: state.isFetching
   };
 }
 
