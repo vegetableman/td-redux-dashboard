@@ -1,0 +1,82 @@
+.widget-directory__modal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.widget-directory__header {
+  background: #F3F8F9;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 15px;
+}
+
+.widget-directory__list {
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget-directory__list__item {
+  display: flex;
+  padding: 15px 0;
+}
+
+.widget-directory__list__item .list__item__left {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.widget-directory__list__item .list__item__right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 20%;
+  justify-content: center;
+}
+
+.widget-directory__list__item .widget__title {
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.widget-directory__list__item .widget__desc, .widget-directory__list__item .widget__author {
+  color: #A8BAC3;
+  font-size: 0.8125rem;
+}
+
+.widget-directory__list__item .widget__author {
+  margin: 2px 0;
+}
+
+.widget-directory__right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.widget-directory__footer {
+  align-items: center;
+  display: flex;
+  flex: 0;
+  justify-content: flex-end;
+  padding: 40px 15px;
+}
+
+.widget-directory__cancel-btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #637CAE;
+  margin-right: 12px;
+}
+
+.widget-directory__cancel-btn:hover {
+  background: #fbfbfb;
+}
+
+.widget-directory__list__item .widget__remove-btn {
+  background: #FF0000;
+  border: 1px solid #FF0000;
+  padding: 7px 10px;
+}

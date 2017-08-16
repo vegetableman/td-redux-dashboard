@@ -1,0 +1,118 @@
+.dashboard__widget {
+  background: #fff;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dashboard__widget__title {
+  color: #5773A8;
+  flex: 1;
+}
+
+.dashboard__widget__menu {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard__widget__header {
+  align-items: center;
+  border-bottom: 2px solid #F0F2F5;
+  display: flex;
+  padding: 0 10px;
+  flex: 0 1 55px;
+  flex-direction: row;
+}
+
+.dashboard__widget__body {
+  flex: 1;
+}
+
+.Dropdown-root, .icon-menu__btn-root {
+  position: relative;
+}
+
+.Dropdown-control, .icon-menu__btn-control {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: default;
+  outline: none;
+  padding: 8px 15px 8px 10px;
+}
+
+.Dropdown-arrow, .icon-menu__btn-arrow {
+  background: url('../images/arrow_down.svg');
+  background-repeat: no-repeat;
+  background-position: -6px -5px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 21px;
+  width: 17px;
+}
+
+.Dropdown-menu, .icon-menu__btn-menu {
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  box-shadow: rgba(0, 0, 0, 0.02) -1px 1px 13px 0px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: -1px;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Dropdown-placeholder, .icon-menu__btn-placeholder {
+  color: #8EA7B1;
+  float: left;
+  font-size: 0.9375rem;
+  text-transform: capitalize;
+}
+
+.Dropdown-option, .icon-menu__btn-option {
+  box-sizing: border-box;
+  color: #8EA7B1;
+  cursor: pointer;
+  display: block;
+  font-size: 0.9375rem;
+  padding: 8px 10px;
+}
+
+.Dropdown-option:last-child, .icon-menu__btn-option:last-child {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.Dropdown-option:hover, .icon-menu__btn-option:hover {
+  background-color: #637CAE;
+  color: #FFF;
+}
+
+.Dropdown-option.is-selected, .icon-menu__btn.is-selected {
+  background-color: #637CAE;
+  color: #FFF;
+}
+
+.icon-menu__btn-placeholder {
+  display: none;
+}
+
+.icon-menu__btn-arrow {
+  background-image: url('../images/menu_icon.svg'); 
+}
+
+.icon-menu__btn-menu {
+  width: 150px;
+  left: -100px;
+}
+
+.icon-menu__btn-arrow:hover {
+  background-image: url('../images/menu_icon_hover.svg'); 
+}
