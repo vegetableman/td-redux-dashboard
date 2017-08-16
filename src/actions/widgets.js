@@ -9,10 +9,11 @@ const userEntity = new schema.Entity('users'),
       });
 
 export const addWidget = (widget) => (dispatch) => {
+  dispatch({
+    type: types.FETCH_WIDGET
+  });
+
   fetchWidget(widget.id).then((response) => {
-    dispatch({
-      type: types.FETCH_WIDGET
-    })
     response.json().then((result) => {
       result = _.assign(result, widget);
       dispatch({
