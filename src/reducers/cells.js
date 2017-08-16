@@ -36,7 +36,12 @@ const cells = (state = initialState, action) => {
       break;
 
     case DELETE_WIDGET:
-      return _.without(state, action.id);
+      return _.map(state, (id) => {
+        if (id === action.id) {
+          return undefined;
+        }
+        return id;
+      })
       break;
 
     default:
