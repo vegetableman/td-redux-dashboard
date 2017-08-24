@@ -1,0 +1,121 @@
+.user-activity {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15px 0 0 0;
+}
+
+.user-activity__item {
+  display: flex;
+  padding: 4px 17px 4px 12px;
+}
+
+.user-activity__item__left, .user-activity__item__right {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+.user-activity__item__avatar-wrapper {
+  margin: 0 10px 0 0;
+  height: 32px;
+  width: 32px;
+}
+
+.user-activity__item__avatar {
+  height: 100%;
+  width: 100%;
+}
+
+.user-activity__item__perc-wrapper {
+  display: flex;
+  flex: 0 0 130px;
+  height: 8px;
+  background: #D8DDE6;
+}
+
+.user-activity__item__perc {
+  background: #00C872;
+  transition: width 0.5s;
+}
+
+.user-activity__item__left {
+  color: #5773A8;
+  font-size: 0.8125rem;
+}
+
+.user-activity__item__right {
+  justify-content: space-between;
+}
+
+.user-activity__user-lastname {
+  padding-left: 5px;
+}
+
+.user-activity__item__perc-value {
+  color: #5773A8;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.user-activity__settings {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.user-activity__settings__body {
+  flex: 1 1 auto;
+}
+
+.user-activity__settings__footer {
+  align-items: center;
+  display: flex;
+  flex: 30px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+
+.user-activity__settings__item {
+  color: #8AA2AF;
+  font-size: 0.8125rem;
+  padding: 10px 12px;
+}
+
+.user-activity__settings__item .settings__item__title {
+  font-size: 0.8125rem;;
+  color: #8AA2AF;
+  padding: 0 0 8px 0;
+}
+
+.user-activity__settings__item .Dropdown-control {
+  border: 1px solid #DEE2EA;
+  border-radius: 5px;
+  display: flex;
+  padding: 8px 15px 8px 10px;
+}
+
+.user-activity__settings__item .Dropdown-control .Dropdown-placeholder {
+  flex: 1;
+}
+
+.user-activity__settings__item  .settings__sort__lowest {
+  margin-left: 40px;
+}
+
+.user-activity__settings__item .settings__sort__radio-group label {
+  cursor: pointer;
+}
+
+.user-activity__settings__cancel-btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #637CAE;
+  margin-right: 20px;
+}
+
+.user-activity__settings__cancel-btn:hover {
+  background: #fbfbfb;
+}

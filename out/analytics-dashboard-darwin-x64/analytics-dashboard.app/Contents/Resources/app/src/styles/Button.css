@@ -1,0 +1,23 @@
+.btn {
+  background: #637CAE;
+  border: 1px solid #637CAE;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.875rem;
+  outline: none;
+  padding: 7px 15px;
+}
+
+.btn:hover {
+  background: #4d6494;
+}
+
+.btn--size-sm {
+  font-size: 0.8125rem;
+}
+
+.btn:disabled {
+  opacity: 0.8;
+}

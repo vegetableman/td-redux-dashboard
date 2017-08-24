@@ -1,0 +1,6 @@
+export const ADD_WIDGET_SUCCESS = 'ADD_WIDGET_SUCCESS';
+export const DELETE_WIDGET = 'DELETE_WIDGET';
+export const EDIT_WIDGET = 'EDIT_WIDGET';
+export const UPDATE_WIDGET = 'UPDATE_WIDGET';
+export const MOVE_WIDGET = 'MOVE_WIDGET';
+export const FETCH_WIDGET = 'FETCH_WIDGET';
