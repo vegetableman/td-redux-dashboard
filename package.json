@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^3.2.0",
+    "electron-prebuilt-compile": "1.7.5",
     "react-scripts": "1.0.11"
   },
   "dependencies": {
     "classnames": "^2.2.5",
     "diff-arrays": "^1.0.0",
+    "electron-compile": "^6.4.1",
     "lodash": "^4.17.4",
     "normalizr": "^3.2.3",
     "react": "^15.6.1",
@@ -22,10 +28,45 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0"
   },
+  "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
+    "electron-open": "electron .",
+    "electron-open-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "main": "./src/electron-main.js",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {},
+      "electronWinstallerConfig": {
+        "name": ""
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": ""
+      }
+    }
   }
 }
